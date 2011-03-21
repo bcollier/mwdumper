@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/apache/commons/compress/bzip2
+END
+BZip2Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/apache/commons/compress/bzip2/BZip2Constants.java
+END
+CBZip2InputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/apache/commons/compress/bzip2/CBZip2InputStream.java
+END
+CBZip2OutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/apache/commons/compress/bzip2/CBZip2OutputStream.java
+END
+CRC.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/apache/commons/compress/bzip2/CRC.java
+END

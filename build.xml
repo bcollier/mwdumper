@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<project name="mwdumper" default="jar">
+	<target name="bindir">
+		<mkdir dir="bin" />
+		<mkdir dir="bin/org" />
+		<mkdir dir="bin/org/mediawiki" />
+		<mkdir dir="bin/org/mediawiki/dumper" />
+		<mkdir dir="bin/org/mediawiki/dumper/gui" />
+		<mkdir dir="bin/org/mediawiki/importer" />
+		<mkdir dir="bin/org/apache" />
+		<mkdir dir="bin/org/apache/commons" />
+		<mkdir dir="bin/org/apache/commons/compress" />
+		<mkdir dir="bin/org/apache/commons/compress/bzip2" />
+	</target>
+	
+	<target name="compile" depends="bindir">
+		<javac	srcdir="src"
+				destdir="bin"
+				source="1.4" 
+				target="1.4">
+			<classpath>
+				<!-- used for tests, not at runtime... -->
+				<pathelement path="libs/junit.jar" />
+				<pathelement path="libs/swing-layout-1.0.jar" />
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<mkdir dir="build" />
+		<jar jarfile="build/mwdumper.jar" compress="true">
+			<manifest>
+				<attribute name="Main-Class" value="org.mediawiki.dumper.Dumper" />
+			</manifest>
+			<fileset dir="bin" includes="org/mediawiki/importer/*.class" />
+			<fileset dir="bin" includes="org/mediawiki/dumper/*.class" />
+			<fileset dir="bin" includes="org/mediawiki/dumper/gui/*.class" />
+			<fileset dir="bin" includes="org/apache/commons/compress/bzip2/*.class" />
+			
+			<!-- Some silly libraries -->
+			<zipfileset src="libs/xml-apis.jar" />
+			<zipfileset src="libs/xercesImpl.jar" />
+			<zipfileset src="libs/swing-layout-1.0.jar" />
+			<zipfileset src="libs/mysql-connector-java-3.1.11-bin.jar" />
+			<zipfileset src="libs/postgresql-8.2-504.jdbc3.jar" />
+		</jar>
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir="bin" includes="**/*.class" />
+			<fileset file="build/mwdumper.jar" />
+		</delete>
+	</target>
+</project>

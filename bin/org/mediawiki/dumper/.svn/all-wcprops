@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/mediawiki/!svn/ver/23800/trunk/mwdumper/src/org/mediawiki/dumper
+END
+Tools.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/mediawiki/!svn/ver/14909/trunk/mwdumper/src/org/mediawiki/dumper/Tools.java
+END
+ProgressFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/mediawiki/!svn/ver/11275/trunk/mwdumper/src/org/mediawiki/dumper/ProgressFilter.java
+END
+Dumper.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/mediawiki/!svn/ver/23800/trunk/mwdumper/src/org/mediawiki/dumper/Dumper.java
+END

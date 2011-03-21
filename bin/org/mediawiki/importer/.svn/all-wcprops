@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/mediawiki/!svn/ver/59325/trunk/mwdumper/src/org/mediawiki/importer
+END
+RevisionListFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/mediawiki/!svn/ver/13834/trunk/mwdumper/src/org/mediawiki/importer/RevisionListFilter.java
+END
+SqlWriter14.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/mediawiki/!svn/ver/54087/trunk/mwdumper/src/org/mediawiki/importer/SqlWriter14.java
+END
+DumpWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/DumpWriter.java
+END
+LatestFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/LatestFilter.java
+END
+TitleMatchFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/TitleMatchFilter.java
+END
+ExactListFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/ExactListFilter.java
+END
+NamespaceSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/mediawiki/!svn/ver/11268/trunk/mwdumper/src/org/mediawiki/importer/NamespaceSet.java
+END
+TimeStampFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/mediawiki/!svn/ver/17250/trunk/mwdumper/src/org/mediawiki/importer/TimeStampFilter.java
+END
+Buffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/mediawiki/!svn/ver/11515/trunk/mwdumper/src/org/mediawiki/importer/Buffer.java
+END
+Contributor.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/mediawiki/!svn/ver/54087/trunk/mwdumper/src/org/mediawiki/importer/Contributor.java
+END
+SqlStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/mediawiki/!svn/ver/11168/trunk/mwdumper/src/org/mediawiki/importer/SqlStream.java
+END
+SqlFileStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/mediawiki/!svn/ver/11478/trunk/mwdumper/src/org/mediawiki/importer/SqlFileStream.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/mediawiki/!svn/ver/53941/trunk/mwdumper/src/org/mediawiki/importer/Page.java
+END
+ListFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/mediawiki/!svn/ver/34484/trunk/mwdumper/src/org/mediawiki/importer/ListFilter.java
+END
+PageFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/PageFilter.java
+END
+MultiWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/MultiWriter.java
+END
+AfterTimeStampFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/mediawiki/!svn/ver/17250/trunk/mwdumper/src/org/mediawiki/importer/AfterTimeStampFilter.java
+END
+SqlWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/mediawiki/!svn/ver/20338/trunk/mwdumper/src/org/mediawiki/importer/SqlWriter.java
+END
+BeforeTimeStampFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/mediawiki/!svn/ver/17250/trunk/mwdumper/src/org/mediawiki/importer/BeforeTimeStampFilter.java
+END
+NotalkFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/NotalkFilter.java
+END
+SqlWriter15.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/mediawiki/!svn/ver/54087/trunk/mwdumper/src/org/mediawiki/importer/SqlWriter15.java
+END
+SqlServerStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/mediawiki/!svn/ver/12972/trunk/mwdumper/src/org/mediawiki/importer/SqlServerStream.java
+END
+NamespaceFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/mediawiki/!svn/ver/23804/trunk/mwdumper/src/org/mediawiki/importer/NamespaceFilter.java
+END
+SphinxWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/mediawiki/!svn/ver/13926/trunk/mwdumper/src/org/mediawiki/importer/SphinxWriter.java
+END
+XmlDumpReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/mediawiki/!svn/ver/59325/trunk/mwdumper/src/org/mediawiki/importer/XmlDumpReader.java
+END
+SqlLiteral.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/mediawiki/!svn/ver/11458/trunk/mwdumper/src/org/mediawiki/importer/SqlLiteral.java
+END
+Siteinfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/mediawiki/!svn/ver/11127/trunk/mwdumper/src/org/mediawiki/importer/Siteinfo.java
+END
+TitleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/mediawiki/!svn/ver/11268/trunk/mwdumper/src/org/mediawiki/importer/TitleTest.java
+END
+Title.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/mediawiki/!svn/ver/11268/trunk/mwdumper/src/org/mediawiki/importer/Title.java
+END
+XmlDumpWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/mediawiki/!svn/ver/54087/trunk/mwdumper/src/org/mediawiki/importer/XmlDumpWriter.java
+END
+XmlWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/mediawiki/!svn/ver/54087/trunk/mwdumper/src/org/mediawiki/importer/XmlWriter.java
+END
+Revision.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/mediawiki/!svn/ver/11145/trunk/mwdumper/src/org/mediawiki/importer/Revision.java
+END

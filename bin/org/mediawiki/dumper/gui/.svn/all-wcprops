@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/mediawiki/!svn/ver/20343/trunk/mwdumper/src/org/mediawiki/dumper/gui
+END
+DumperGui.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/mediawiki/!svn/ver/20341/trunk/mwdumper/src/org/mediawiki/dumper/gui/DumperGui.java
+END
+DumperWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/mediawiki/!svn/ver/20341/trunk/mwdumper/src/org/mediawiki/dumper/gui/DumperWindow.java
+END
+GraphicalProgressFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/mediawiki/!svn/ver/11275/trunk/mwdumper/src/org/mediawiki/dumper/gui/GraphicalProgressFilter.java
+END
+DumperWindowForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/mediawiki/!svn/ver/20343/trunk/mwdumper/src/org/mediawiki/dumper/gui/DumperWindowForm.java
+END
+DumperWindowForm.form
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/mediawiki/!svn/ver/20343/trunk/mwdumper/src/org/mediawiki/dumper/gui/DumperWindowForm.form
+END

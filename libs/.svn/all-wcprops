@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/mediawiki/!svn/ver/32755/trunk/mwdumper/libs
+END
+junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/mediawiki/!svn/ver/11140/trunk/mwdumper/libs/junit.jar
+END
+xerces-2_9_0-utf8reader.patch
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/mediawiki/!svn/ver/32754/trunk/mwdumper/libs/xerces-2_9_0-utf8reader.patch
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/mediawiki/!svn/ver/32754/trunk/mwdumper/libs/xml-apis.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/mediawiki/!svn/ver/32755/trunk/mwdumper/libs/xercesImpl.jar
+END
+swing-layout-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/mediawiki/!svn/ver/12853/trunk/mwdumper/libs/swing-layout-1.0.jar
+END
+junit-cpl-v10.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/mediawiki/!svn/ver/11140/trunk/mwdumper/libs/junit-cpl-v10.html
+END
+mysql-connector-java-3.1.11-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/mediawiki/!svn/ver/11290/trunk/mwdumper/libs/mysql-connector-java-3.1.11-bin.jar
+END
+postgresql-8.2-504.jdbc3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/mediawiki/!svn/ver/20338/trunk/mwdumper/libs/postgresql-8.2-504.jdbc3.jar
+END
