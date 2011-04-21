@@ -53,7 +53,7 @@ public class Title {
 	}
 	
 	public static String ValidateTitleChars(String text) {
-		// FIXME
+		//
 		return text;
 	}
 	

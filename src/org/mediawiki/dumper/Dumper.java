@@ -35,7 +35,7 @@
 			on next one or end of sequence, write out
 			[so for 1.4 schema we can be friendly]
 	
-	progress report: [TODO]
+	progress report: 
 		if possible, a percentage through file. this might not be possible.
 		rates and counts definitely
 	
@@ -74,6 +74,7 @@ import org.mediawiki.importer.*;
 
 
 class Dumper {
+
 	public static void main(String[] args) throws IOException, ParseException {
 		InputStream input = null;
 		OutputWrapper output = null;
@@ -243,7 +244,7 @@ class Dumper {
 		else if (format.equals("sphinx"))
 			return new SphinxWriter(output.getFileStream());
 		else if (format.equals("flatfile"))
-			return new FlatWriter(output.getFileStream());
+			return new FlatWriter(output.getFileStream(), param);
 		else if (format.equals("mysql") || format.equals("pgsql") || format.equals("sql")) {
 			SqlStream sqlStream = output.getSqlStream();
 			SqlWriter ret;

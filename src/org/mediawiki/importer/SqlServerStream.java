@@ -10,7 +10,7 @@ public class SqlServerStream implements SqlStream {
 	private Connection connection;
 	
 	public SqlServerStream(Connection conn) {
-		connection = conn; // TODO
+		connection = conn; // 
 	}
 	
 	public void writeComment(CharSequence sql) {

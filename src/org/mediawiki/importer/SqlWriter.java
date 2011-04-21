@@ -167,7 +167,7 @@ public abstract class SqlWriter implements DumpWriter {
 	
 	
 	protected String commentSafe(String text) {
-		// TODO
+		// 
 		return text;
 	}
 	

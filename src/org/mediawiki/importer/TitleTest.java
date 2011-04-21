@@ -110,7 +110,7 @@ public class TitleTest extends TestCase {
 	 * Test method for 'org.mediawiki.importer.Title.ValidateTitleChars(String)'
 	 */
 	/*public void testValidateTitleChars() {
-	 // FIXME
+	 // 
 	}*/
 
 	/*

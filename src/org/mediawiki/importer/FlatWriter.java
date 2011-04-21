@@ -30,8 +30,8 @@ package org.mediawiki.importer;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
 import java.util.Calendar;
 
 public class FlatWriter implements DumpWriter {
@@ -40,19 +40,28 @@ public class FlatWriter implements DumpWriter {
 	protected static final int DELETED_COMMENT = 2;
 	protected static final int DELETED_USER = 4;
 	protected static final int DELETED_RESTRICTED = 8;
-	protected BufferedOutputStream writer;
+	//protected BufferedOutputStream writer;
 	protected static final Integer ONE = new Integer(1);
 	protected static final Integer ZERO = new Integer(0);
 	protected BufferedWriter pageWriter = null;
 	protected BufferedWriter revWriter = null;
+	//protected BufferedOutputStream revWriter;
 	private Page currentPage;
 	private Revision lastRevision;
+	protected String encoding;
+	protected BufferedWriter writer;
 	
-	public FlatWriter(OutputStream output) throws IOException {
+	public FlatWriter(OutputStream output, String pageOutFileLocation) throws IOException {
 		stream = output;
-		writer = new BufferedOutputStream(stream);
-		pageWriter = new BufferedWriter(new FileWriter("/home/bcollier/Data/WPDump/pages.txt"));
-		revWriter = new BufferedWriter(new FileWriter("/home/bcollier/Data/WPDump/revisions.txt"));
+		//writer = new BufferedOutputStream(stream);
+		pageWriter = new BufferedWriter(new FileWriter(pageOutFileLocation));
+		//revWriter = new BufferedWriter(new FileWriter("/home/bcollier/revisions_mwdumper.txt"));
+		//revWriter = new BufferedOutputStream(System.out, OUT_BUF_SZ);
+		//revWriter = writer;
+		
+		encoding = "utf-8";
+		revWriter = new BufferedWriter(new OutputStreamWriter(stream, "UTF8"));
+		
 	}
 	
 	protected String timestampFormat(Calendar time) {
@@ -84,14 +93,14 @@ public class FlatWriter implements DumpWriter {
 	}
 	
 	public void writeStartWiki() throws IOException{
-		writer.write("Begin Writing...\n".getBytes());
+		//writer.write("Begin Writing...\n".getBytes());
 	}
 	
 	public void writeEndWiki() throws IOException{
-		writer.write("Finished Writing.".getBytes());
-		writer.write("\n".getBytes());
-		writer.flush();
-		writer.close();
+		//writer.write("Finished Writing.".getBytes());
+		//writer.write("\n".getBytes());
+		//writer.flush();
+		//writer.close();
 		pageWriter.flush();
 		revWriter.flush();
 		pageWriter.close();
@@ -106,8 +115,8 @@ public class FlatWriter implements DumpWriter {
 	public void writeStartPage(Page page) throws IOException{
 		currentPage = page;
 		lastRevision = null;
-		writer.write("Starting a new page".getBytes());
-		writer.write("\n".getBytes());
+		//writer.write("Starting a new page".getBytes());
+		//writer.write("\n".getBytes());
 		
 		//pageWriter.write("page\n");
 	}
@@ -125,6 +134,14 @@ public class FlatWriter implements DumpWriter {
 		//writer.write("\n".getBytes());
 	}
 	
+	//clean the string of tabs and new lines
+	public String clStr(String dirtyString){
+		String cleanString; 
+		cleanString = dirtyString.replace("\n", " ");
+		return cleanString.replace("\t", " ");
+		
+	}
+	
 	public void writeRevision(Revision revision) throws IOException{
 		
 		int rev_deleted = 0; 
@@ -132,11 +149,12 @@ public class FlatWriter implements DumpWriter {
 		if (revision.Comment==null) rev_deleted |= DELETED_COMMENT;
 		if (revision.Text==null) rev_deleted |= DELETED_TEXT;
 		
+		
 		revWriter.write(Integer.toString(revision.Id));
 		revWriter.write("\t");
 		revWriter.write(Integer.toString(currentPage.Id));
 		revWriter.write("\t");
-		revWriter.write(revision.Comment == null ? "" : revision.Comment);
+		revWriter.write(revision.Comment == null ? "" : clStr(revision.Comment));
 		revWriter.write("\t");
 		revWriter.write(Integer.toString(revision.Contributor.Username == null ? ZERO :  new Integer(revision.Contributor.Id)));
 		revWriter.write("\t");
@@ -144,11 +162,19 @@ public class FlatWriter implements DumpWriter {
 		revWriter.write("\t");
 		revWriter.write(timestampFormat(revision.Timestamp));
 		revWriter.write("\t");
+		revWriter.write(Integer.toString(revision.Timestamp.get(Calendar.YEAR)));
+		revWriter.write("\t");
+		revWriter.write(Integer.toString(revision.Timestamp.get(Calendar.MONTH)+1));
+		revWriter.write("\t");
 		revWriter.write(Integer.toString(revision.Minor ? ONE : ZERO));
 		revWriter.write("\t");
 		revWriter.write(Integer.toString(rev_deleted==0 ? ZERO : new Integer(rev_deleted)));
+		revWriter.write("\t");
+		revWriter.write(revision.Text == null ? "0" : Integer.toString(lengthUtf8(revision.Text)));
+		revWriter.write("\t");
+		revWriter.write(revision.Text == null ? "" : clStr(revision.Text));
 		revWriter.write("\n");
-		
+
 		lastRevision = revision;
 		
 		//use this line to get the text

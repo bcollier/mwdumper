@@ -63,7 +63,7 @@ public class XmlDumpWriter implements DumpWriter {
 			{"xsi:schemaLocation", ns + " " + schema},
 			{"version", version},
 			{"xml:lang", "en"}});
-		// TODO: store and keep the xml:lang
+		//  store and keep the xml:lang
 	}
 	
 	public void writeEndWiki() throws IOException {

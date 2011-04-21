@@ -36,7 +36,7 @@ public class Revision {
 	public boolean Minor;
 	
 	public boolean isRedirect() {
-		// FIXME
+		
 		return Text.startsWith("#REDIRECT ") || Text.startsWith("#redirect ");
 	}
 	

@@ -184,7 +184,7 @@ public class DumperWindow extends DumperWindowForm {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
+				//  Auto-generated catch block
 				e1.printStackTrace();
 			}
 		}

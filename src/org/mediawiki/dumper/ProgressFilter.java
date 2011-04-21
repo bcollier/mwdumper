@@ -36,7 +36,7 @@ import org.mediawiki.importer.Revision;
 public class ProgressFilter extends PageFilter {
 	int pages = 0;
 	int revisions = 0;
-	int interval = 1000;
+	int interval = 100000000;
 	MessageFormat format = new MessageFormat("{0} pages ({1}/sec), {2} revs ({3}/sec)");
 	long start = System.currentTimeMillis();
 	
@@ -70,7 +70,7 @@ public class ProgressFilter extends PageFilter {
 	}
 
 	private void reportProgress() {
-		if (revisions % interval == 0)
+		if (revisions % 100000 == 0)
 			showProgress();
 	}
 	

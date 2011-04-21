@@ -190,7 +190,7 @@ public class DumperGui {
 		assert schemaReady;
 		assert !running;
 		
-		// TODO work right ;)
+		// work right ;)
 		final InputStream stream = Tools.openInputFile(inputFile);
 		//DumpWriter writer = new MultiWriter();
 		conn.setCatalog(dbname);
