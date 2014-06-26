@@ -137,8 +137,8 @@ public class FlatWriter implements DumpWriter {
 	//clean the string of tabs and new lines
 	public String clStr(String dirtyString){
 		String cleanString; 
-		cleanString = dirtyString.replace("\n", " ");
-		return cleanString.replace("\t", " ");
+		cleanString = dirtyString.replace("\n", "%0A");
+		return cleanString.replace("\t", "%09");
 		
 	}
 	
